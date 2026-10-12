@@ -1,0 +1,176 @@
+{
+  "schema_version": 2,
+  "jobs": 2,
+  "checked_at_utc": "2026-10-12T01:55:00.958565+00:00",
+  "status": "passed",
+  "verification_policy": "Always recompile every local module; never resume or reuse local oleans.",
+  "allowed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "files": [
+    {
+      "file": "IncePeriodic.lean",
+      "sha256": "ace8125dc983ec8ca509ef0e7918fde00a90b286e207ac1381ec0166db52816f",
+      "source_unchanged_during_check": true,
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-o",
+        ".lake/build/lib/lean/IncePeriodic.olean",
+        "IncePeriodic.lean"
+      ],
+      "exit_code": 0,
+      "audit_count": 6,
+      "expected_audits": [
+        "IncePeriodic.solves_translate",
+        "IncePeriodic.periodic_factor",
+        "IncePeriodic.reconstruct_factor",
+        "IncePeriodic.eigenfunction_factorization",
+        "IncePeriodic.periodic_of_jordan_step",
+        "IncePeriodic.entire_jordan_remainder"
+      ],
+      "audit_names_match": true,
+      "axioms_allowed": true,
+      "audits": {
+        "IncePeriodic.solves_translate": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "IncePeriodic.periodic_factor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "IncePeriodic.reconstruct_factor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "IncePeriodic.eigenfunction_factorization": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "IncePeriodic.periodic_of_jordan_step": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "IncePeriodic.entire_jordan_remainder": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "passed": true,
+      "forbidden_proof_commands": [],
+      "warning_count": 0,
+      "olean": ".lake/build/lib/lean/IncePeriodic.olean",
+      "olean_sha256": "9ebc80a042ed9b74140842ed5b98926b424692912a1fb77845075e5799d655b2",
+      "log": "modules/IncePeriodic.log",
+      "elapsed_seconds": 15.403
+    },
+    {
+      "file": "Audit.lean",
+      "sha256": "d7fb53aff968c303ed33c10b3f0c9bd8a50ccc178690296023ac7806b0017585",
+      "source_unchanged_during_check": true,
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-o",
+        ".lake/build/lib/lean/Audit.olean",
+        "Audit.lean"
+      ],
+      "exit_code": 0,
+      "audit_count": 6,
+      "expected_audits": [
+        "IncePeriodic.eigenfunction_factorization",
+        "IncePeriodic.entire_jordan_remainder",
+        "IncePeriodic.periodic_factor",
+        "IncePeriodic.periodic_of_jordan_step",
+        "IncePeriodic.reconstruct_factor",
+        "IncePeriodic.solves_translate"
+      ],
+      "audit_names_match": true,
+      "axioms_allowed": true,
+      "audits": {
+        "IncePeriodic.eigenfunction_factorization": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "IncePeriodic.entire_jordan_remainder": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "IncePeriodic.periodic_factor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "IncePeriodic.periodic_of_jordan_step": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "IncePeriodic.reconstruct_factor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "IncePeriodic.solves_translate": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "passed": true,
+      "forbidden_proof_commands": [],
+      "warning_count": 0,
+      "olean": ".lake/build/lib/lean/Audit.olean",
+      "olean_sha256": "187c9a45363d0f6dc086dd86bc92e51a2d0b353e0b3030b80f7b75f47b7dc02e",
+      "log": "modules/Audit.log",
+      "elapsed_seconds": 14.833
+    }
+  ],
+  "recompiled_modules": [
+    "IncePeriodic.lean",
+    "Audit.lean"
+  ],
+  "reused_verified_modules": [],
+  "all_requested_checks_passed": true,
+  "ince_eigenfunction_factorization_verified": true,
+  "configuration_sha256": {
+    "lean-toolchain": "302cd63c54178885b89e669f33b38f12f4dd7ae7e5cac537b3203e3768d8fb2b",
+    "lake-manifest.json": "a627adea9af681d80620112a545c00efd5ea131c9edb849f4bb2b20a6332ea94",
+    "lakefile.toml": "313696197e26b1a78e30e33345f355dccd5d9df49ab3229b599179c4f2e9a7c5",
+    "verify.py": "cc1ede33cffdc4625b6d101e8ad7663f412d55598e6b0f698f353875620fbc9e"
+  },
+  "lean_toolchain": "leanprover/lean4:v4.33.0",
+  "mathlib_revision": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "mathlib_clean": true,
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "requested_modules": [
+    "IncePeriodic.lean",
+    "Audit.lean"
+  ],
+  "module_count": 2,
+  "source_bytes": 4011,
+  "source_lines": 94,
+  "all_sources_unchanged": true,
+  "all_oleans_unchanged": true,
+  "configuration_unchanged": true,
+  "dependency_check_passed_at_end": true,
+  "distinct_proved_declarations": 6,
+  "unified_audit_matches_modules": true,
+  "all_modules_checked": true,
+  "warning_count": 0,
+  "finished_at_utc": "2026-10-12T01:55:33.346462+00:00",
+  "elapsed_seconds": 32.388
+}
