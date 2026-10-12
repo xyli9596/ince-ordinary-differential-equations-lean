@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "Please cite an exact commit; this project currently contains auxiliary results, not full Floquet theory."
+title: "Ince: periodic ODE groundwork in Lean 4"
+type: software
+authors:
+  - family-names: Li
+    given-names: Xing-Yu
+version: 0.1.0
+license: Apache-2.0
+repository-code: https://github.com/xyli9596/ince-ordinary-differential-equations-lean
